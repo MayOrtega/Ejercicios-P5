@@ -1,0 +1,21 @@
+
+body{
+    background-color: black;
+}
+nav{
+    background-image:url('../img/imagen3.jpg') ;
+}
+
+a{
+    color: black;
+    
+}
+
+.col{
+    background-color: rgba(238, 83, 48, 0.9);
+    color: wheat;
+    font-weight:bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+

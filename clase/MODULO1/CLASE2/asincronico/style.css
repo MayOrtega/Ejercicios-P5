@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+body{
+    background-image: url(../../img/fondo80.jpg);
+    color: antiquewhite;
+    text-align: justify;
+    text-decoration:aliceblue;
+    font-family: 'Baloo 2';
+    
+}
+
+nav{
+    background-color: coral;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Sirin Stencil';
+    border-style: double;
+}
+
+.head{
+    text-align: center;
+}
+
+.cont{
+    display: flex;
+    justify-content:center;
+}
+
+  .behavior{
+     width: 200px;
+     float: inline-start;
+     width: 300px;
+     height:200px;
+     margin-top: 4%;
+     margin-right: 10%;
+    }
+
+img{
+    align-items: center;
+    align-content: center;
+}
+
+ol{
+    text-align: left;
+   
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+.grid{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+text-decoration: none;
+
+}
+
+a:link{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:visited{
+    color: antiquewhite;
+}
+
+img{
+    border: solid wheat 3px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: cadetblue;
+    border: solid wheat 2px;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: 25%;
+}

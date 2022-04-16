@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>InstaPet</title>
+</head>
+<body>
+    <h1>Bienvenidos a InstaPet</h1>
+    <p>InstaPet es la mejor red social para petsLovers!</p>
+
+    <!--Formulario-->
+    <!--action puede ser una url o carpeta-->
+      <!--method get si pide info o post si la envía-->
+    <div class="content">
+    <form method="post" action="url">
+        <label name="petname">
+                Nombre de tu mascota
+                <br>
+                <input type="text" name="name" placeholder="Pet name" required>
+            </label>
+            <br>
+            <br>
+            <label name="petage">
+                Edad de tu mascota
+                <br>
+                <input type="number" max="100" name="age" placeholder="Pet age" required>
+            </label>
+            <br>
+            <br>
+            <label name="mail">
+                Mail
+                <br>
+                <input type="email" placeholder="Email" required>
+    
+            </label>
+            <br>
+            <br>
+            <label name="password">
+                Password
+                <br>
+                <input type="password" minlength="6" maxlength="8" placeholder="Contraseña" required>
+            </label>
+            <br>
+            <br>
+            <label name="petcolor">
+                <p>Color de la mascota</p>
+                <input type="color" name="color" id="petcolor" value="#ff0000">
+            </label>
+            <br>
+            <br>    
+            Ingrese su consulta:
+            <br>
+    <textarea name="consulta" id="consultas" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <input type="checkbox" name="terminos" id="terminosycondiciones">Aceptar Términos y Condiciones
+    <input type="submit" value="Enviar">
+    <br>
+    <br>
+    <iframe width="420" height="315" src="https://goo.gl/maps/uFNGMc97HMAEvmmy9">Ubicación de la tienda </iframe>
+    <br>
+    </div>
+      </form>
+    
+    </body>
+</html>

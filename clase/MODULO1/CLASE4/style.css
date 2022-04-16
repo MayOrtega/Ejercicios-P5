@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Square Peg';
+    font-size: 40px;
+    background-image: url(./img/fondo.jpg);
+}
+
+h1{
+    font-size: 90px;
+    background-color: blanchedalmond;
+    border: solid black 2px;
+    border-radius: 50px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+p{
+    background-color: azure;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -3%;
+    border: solid black 2px;
+}
+form{
+    background-color: black;
+    color: blanchedalmond;
+    width: 40%;
+    margin-left: 30%;
+}

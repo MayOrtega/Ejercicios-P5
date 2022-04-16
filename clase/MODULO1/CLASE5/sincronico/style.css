@@ -3,7 +3,7 @@ body{
     background-color: black;
 }
 nav{
-    background-image:url('../img/imagen3.jpg') ;
+    background-image:url('../../img/imagen3.jpg') ;
 }
 
 a{

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
 body{
     text-align: center;
@@ -8,6 +9,11 @@ body{
         background: rgb(238,219,174);
         background: radial-gradient(circle, rgba(238,219,174,1) 0%, rgba(216,233,148,1) 100%);
         margin-bottom: 3%;
+    }
+
+    h2{
+        font-family: 'Walter Turncoat', cursive;
+        color: grey;
     }
 
     .nav{

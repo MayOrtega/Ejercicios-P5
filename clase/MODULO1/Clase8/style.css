@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+    header{
+        background: rgb(238,219,174);
+        background: radial-gradient(circle, rgba(238,219,174,1) 0%, rgba(216,233,148,1) 100%);
+        margin-bottom: 3%;
+    }
+
+    .nav{
+        background-image: url('../img/portada1.jfif');
+        border: solid lightskyblue 3px;
+    }
+
+    .navbar-nav{
+        background-color: orange;
+        border-radius: 5px;
+        padding:2%;
+        font-weight: bold;
+
+    }
+
+.portada{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.img-portada{
+    width: 8em;
+    height: 5em;
+    border: solid rgb(255, 171, 2) 4px;
+    border-radius: 10px;
+    margin: 1% 1% 1% 0;
+
+}
+img{
+    width: 14%;
+    height: 10%;
+    
+}
+
+.imgHist, .imgNotic{
+    width: 200px;
+    height: 156px;
+    margin-top: 2%;
+}
+
+.container{
+    width: 100%;
+}
+
+h4{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.contForm{
+    background-image: url('../img/plazaOvalle.jpg');
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+   
+        
+}
+
+input, textarea{
+    width: 70%;
+}
+
+#btn{
+    background-color: orange;
+}
+
+.col{
+    margin: 3%;
+    border: solid orange 4px;
+    border-style: dotted;
+    font-weight: bold;
+}
+
+footer{
+    background-color: lightsalmon;
+    font-weight: bold;
+    font-size: 20%;
+    padding: 1%;
+}

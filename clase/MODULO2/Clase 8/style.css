@@ -1,0 +1,16 @@
+.cambiarcolorfondo{
+    background-color: yellow;
+    color: red;
+    font-size: 300%;
+}
+
+.cambiarcolorfondo2{
+    background-color: cyan;
+    color: rgb(59, 3, 59);
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.listaOrdenada{
+    color: blue;
+}

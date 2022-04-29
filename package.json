@@ -1,0 +1,19 @@
+{
+  "name": "clases",
+  "version": "1.0.0",
+  "description": "Ejercicios del bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayorlenO/Clases.git"
+  },
+  "author": "Mayorlen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayorlenO/Clases/issues"
+  },
+  "homepage": "https://github.com/MayorlenO/Clases#readme"
+}

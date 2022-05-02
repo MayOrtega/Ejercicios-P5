@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    /* background-image: url('fondo.png'); */
+    color: aliceblue;
+}
+
+h2{
+    margin-top: 10%;
+}
+
+h1{
+    margin-top: 5%;
+}
+
+.container{
+    background-image: url('consola.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 30% 600px;
+    z-index: 1;
+    
+}

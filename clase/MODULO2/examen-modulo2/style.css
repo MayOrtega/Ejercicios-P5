@@ -4,20 +4,37 @@ body{
     text-align: center;
     font-family: 'Source Code Pro', monospace;
     font-weight: bolder;
-    /* background-image: url('fondo.png'); */
+    background-image: url('consola.jpg');
+    background-color: darkgoldenrod;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x:center;
+    background-position-y: 20%;
+    color: black;
+}
+
+.title{
     color: aliceblue;
+    font-size: 26px;
 }
 
 h2{
-    margin-top: 10%;
+    margin-top: 8%;
+    background-color: black;
+    width: 30%;
+    color: aliceblue;
+    border: solid red 4px;
+    border-radius: 10px;
+    margin-left: 35%;
 }
 
 h1{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
+
 .container{
-    background-image: url('consola.jpg');
+    
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 30% 600px;

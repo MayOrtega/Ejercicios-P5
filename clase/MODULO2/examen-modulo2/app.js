@@ -19,76 +19,74 @@ const words = [
     'chili'
     ];
 
-    
-    var palabraAleatoria = words[Math.floor(Math.random() * words.length)]
-    var time = 10;
-    var score = 0;
-    
-     
-   
-          
-       function randomWords () {
-       console.log(palabraAleatoria)
-      
+var palabraAleatoria = document.querySelector("#randomWord");
+var randomWord;
+var time = 10;
+var score = 0;
+
+
+
+function randomWords () {
+    let i = Math.floor(Math.random()*words.length);
+    randomWord = words[i];
+}
+
+function addToDom () {
+    randomWords ();
+    palabraAleatoria.innerHTML = randomWord;
+}
+
+addToDom ();
+
+var palabraIngresada = document.querySelector("#text")
+
+
+palabraIngresada.addEventListener("keypress", function (e) { 
+     if (e.key == "Enter") 
+    {if (palabraIngresada.value == palabraAleatoria) {
+    (time += 3); 
+    $('#text').val(""); 
+    addToDom();
+    updateScore();
+    } else { 
+    (palabraIngresada.value = ""); 
+    addToDom()}} 
     }
-    
-    randomWords()  
+);
 
-    function addToDom (){
-        var wordRamdom = document.querySelector("#randomWord")
-        wordRamdom.innerHTML=palabraAleatoria;
+function actualizarTiempo () {
+    if (time === 0) {
+        clearInterval(timeInterval);
+        finalTime = showScore.innerHTML;
+        gameOver();
+    } else {
+    time -=1;
+    timeSpan.innerHTML = time;
     }
+};
+
+let timeInterval = setInterval (actualizarTiempo, 1500);
+
+var showScore = document.querySelector("#score");
+showScore.innerHTML = score;
+
+
+function updateScore () {
+    score +=1;
+    showScore.innerHTML = score;  
+};
+
+var gameContainer = document.querySelector("#end-game-container");
+
+
+function gameOver () {
+    var finalTime = showScore.innerHTML;
     
-    addToDom()
+    gameContainer.innerHTML = "Se acabó el tiempo. Tu puntaje fue de " + finalTime;    
+};
 
- 
-    //contador de tiempo
-    window.onload = actualizarTiempo;
-    function actualizarTiempo() {
-        document.querySelector('#timeSpan').innerHTML = time;
-        if(time==0){
-          
-        }else{
-          time-=1;
-          setTimeout("actualizarTiempo()",1500);
-        }
-      }
-
-
-      function updateScore(){
-        var totalScore = document.querySelector('#score').innerHTML = score+=1;
+var btnReinicio = document.querySelector('#reiniciar')
+btnReinicio.addEventListener('click', () => {
+ window.location.reload();
         
-      }
-
-      function gameOver(){
-        document.querySelector('#end-game-container').innerHTML = 'Fin de la partida. Su puntaje total es: ' + totalScore;
-        
-
-        //version 2.0
-  
-    var input = document.querySelector('#text')
-
-    input.addEventListener('keypress', e => {
-      if(e.key == "Enter"){
-      var palabraIngresada = document.querySelector('#text').value
-      
-      
-       console.log(palabraIngresada)
-      }
-      
-      if(palabraIngresada == palabraAleatoria){
-
-       time+=4 
-       updateScore()
-       
-       
-
-                  
-     }else if(e.key == "Enter" && palabraAleatoria !==palabraIngresada ){
-       alert('Escriba bien')
-     }
-    
-  })
-  }
-    
-    
+ })

@@ -21,7 +21,7 @@ const words = [
 
 var palabraAleatoria = document.querySelector("#randomWord");
 var randomWord;
-var time = 10;
+var time = 11;
 var score = 0;
 
 
@@ -57,7 +57,7 @@ palabraIngresada.addEventListener("keypress", function (e) {
 function actualizarTiempo () {
     if (time === 0) {
         clearInterval(timeInterval);
-        finalTime = showScore.innerHTML;
+        finalTime = totalScore.innerHTML;
         gameOver();
     } else {
     time -=1;
@@ -67,22 +67,21 @@ function actualizarTiempo () {
 
 let timeInterval = setInterval (actualizarTiempo, 1500);
 
-var showScore = document.querySelector("#score");
-showScore.innerHTML = score;
+var totalScore = document.querySelector("#score");
+totalScore.innerHTML = score;
 
 
 function updateScore () {
-    score +=1;
-    showScore.innerHTML = score;  
+  score ++;
+  totalScore.innerHTML = score; 
 };
 
 var gameContainer = document.querySelector("#end-game-container");
 
 
 function gameOver () {
-    var finalTime = showScore.innerHTML;
-    
-    gameContainer.innerHTML = "Se acabó el tiempo. Tu puntaje fue de " + finalTime;    
+    var finalTime = totalScore.innerHTML;
+     gameContainer.innerHTML = "Se acabó el tiempo. Tu puntaje fue" + finalTime;    
 };
 
 var btnReinicio = document.querySelector('#reiniciar')

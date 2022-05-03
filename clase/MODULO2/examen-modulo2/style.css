@@ -64,7 +64,7 @@ h1{
     margin-top: -1%;
 }
 
-#reiniciar{
+.reiniciar{
     width: 12%;
     height: 60px;
     background-color: rgb(123, 203, 220);
@@ -72,9 +72,17 @@ h1{
      border-radius: 50%;
     margin-top: 1.5%;
     font-size: 30px;
+    cursor: pointer;
 }
 
+.reiniciar:hover {
+    background-color: rgb(243, 36, 67);
+    border: solid rgb(7, 100, 188) 4px; 
+}
 
+.score-container{
+    color: black
+}
 .container{
     
     background-repeat: no-repeat;

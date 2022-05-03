@@ -57,7 +57,7 @@ palabraIngresada.addEventListener("keypress", function (e) {
 function actualizarTiempo () {
     if (time === 0) {
         clearInterval(timeInterval);
-        finalTime = totalScore.innerHTML;
+        finalScore = totalScore.innerHTML;
         gameOver();
     } else {
     time -=1;
@@ -65,23 +65,24 @@ function actualizarTiempo () {
     }
 };
 
+var totalScore = document.querySelector("#score");
 let timeInterval = setInterval (actualizarTiempo, 1500);
 
-var totalScore = document.querySelector("#score");
 totalScore.innerHTML = score;
 
 
 function updateScore () {
-  score += 1;
-  totalScore.innerHTML = score; 
+    
+    score ++;
+    totalScore.innerHTML = score;  
 };
 
 var gameContainer = document.querySelector("#end-game-container");
 
-
 function gameOver () {
-    var finalTime = totalScore.innerHTML;
-     gameContainer.innerHTML = "Se acabó el tiempo. Tu puntaje fue" + finalTime;    
+    var finalScore = totalScore.innerHTML;
+     gameContainer.innerHTML = "Se acabó el tiempo. Tu puntaje fue" + finalScore;
+      
 };
 
 var btnReinicio = document.querySelector('#reiniciar')

@@ -72,7 +72,7 @@ totalScore.innerHTML = score;
 
 
 function updateScore () {
-  score ++;
+  score += 1;
   totalScore.innerHTML = score; 
 };
 

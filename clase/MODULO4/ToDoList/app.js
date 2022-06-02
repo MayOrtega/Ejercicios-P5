@@ -1,6 +1,6 @@
-var agregar = document.querySelector('#boton-agregar');
-var input = document.querySelector('#input');
-var container = document.querySelector('#container')
+let agregar = document.querySelector('#boton-agregar');
+let input = document.querySelector('#input');
+let container = document.querySelector('#cont')
 
 class Item {
     constructor(nuevaTarea){
@@ -9,15 +9,18 @@ class Item {
 }
 
 crearDiv(nuevaTarea){
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add = 'item';
+    container.appendChild(newDiv)
+    newDiv.appendChild(inputItem);
+
     const inputItem = document.createElement('div');
     inputItem.type = 'text';
     inputItem.disabled = true;
     inputItem.classList.add = 'itemInput';
     inputItem.value = nuevaTarea;
-    newDiv.appendChild(inputItem);
-
-    const newDiv = document.createElement('div');
-    newDiv.classList.add = 'item';
+       
 
     const botonEditar = document.createElement('button');
     botonEditar.classList.add = 'botonEditar'
@@ -32,9 +35,20 @@ crearDiv(nuevaTarea){
     container.appendChild(newDiv)
 
     botonEditar.addEventListener('click', function(){
-        botonEditar.
+        if (inputItem.disabled == false) {
+            inputItem.disabled = true;
+            botonEditar.innerHTML = "<i class='fas fa-lock'></i>";
+        } else {
+            inputItem.removeAttribute("disabled");
+            botonEditar.innerHTML = "<i class='fas fa-lock-open'></i>";
+        }
     })
 
+    botonRemover.addEventListener('click', function(){
+        container.removeChild(newDiv)
 
+    })
 }
 }
+
+

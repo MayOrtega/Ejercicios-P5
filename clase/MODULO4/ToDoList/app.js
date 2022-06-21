@@ -1,5 +1,5 @@
 let agregar = document.querySelector('#boton-agregar');
-let input = document.querySelector('#input');
+let input = document.querySelector('#primerInput');
 let container = document.querySelector('#cont')
 
 class Item {

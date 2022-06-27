@@ -1,0 +1,1 @@
+[{"artículo":"harina","precio":"$800","cantidad":"2 kgs"},{"artículo":"zapallo","precio":"$1000","cantidad":"0.5 kgs"},{"articulo":"aceite","precio":"$3500","cantidad":"1"}]

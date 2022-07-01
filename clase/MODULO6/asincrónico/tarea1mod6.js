@@ -19,35 +19,37 @@ const shopping = [
 
 
 //Crear archivo con node
-function maipularArchivo (){
-fs.writeFile('./shopping.js', JSON.stringify(shopping), (error) =>{
-    if(error){
-        throw error;
-    }
-    console.log('Archivo creado')
-})
 
-fs.renameSync('shopping.js', 'renombrado.js')
-console.log('Archivo renombrado')
-
-
-// fs.writeFileSync('./shopping.js', JSON.stringify(shopping))
-// console.log('Archivo creado');
-
-// fs.rename('./shopping.js', 'renombrado.js', () => {
-//     console.log("\nArchivo renombrado\n");
-
-// })
-   
-
-    // try {
-    //     fs.unlinkSync('renombrado.js')
-    //     console.log('Archivo eliminado')
-    // } catch(err) {
-    //     console.error(err)
-    // }
-     
-
+fs.writeFile('./shopping.js', JSON.stringify(shopping), (error) => {
+if(error){
+    throw error
 }
-maipularArchivo()
+console.log('Archivo creado')
+});
 
+function renombrar () {
+fs.rename('shopping.js', 'compras.js', (error) => {
+    if(error){
+        throw error
+    } console.log('Archivo renombrado')
+})
+}
+
+function timer1() {
+    timeout = setTimeout(renombrar, 3000);
+  }
+  timer1()
+ 
+function eliminar(){
+    fs.unlink('compras.js', (error) =>{
+        if(error){
+            throw error
+        }
+        console.log('Archivo eliminado')
+    })
+}
+   
+function timer2() {
+    timeout = setTimeout(eliminar, 6000);
+  }
+  timer2()
